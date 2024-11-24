@@ -5,3 +5,102 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
+
+body{
+    background-color: red;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+}
+
+section{
+    background-color: green;
+    padding: 30px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+section h1{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.input-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgb(255,255,255,0.2);
+    color: #fff;
+    padding-right: 40px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 20px;
+    top: 50%;
+    color: #fff;
+}
+
+.remenber-forgot{
+    display: flex;
+    /*Pour mettre l'epace entre les deux*/
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    /*Pour mettre de l'espace en bas*/
+    margin-bottom: 25px;
+
+}
+
+.remenber-forgot a, .registre-link a {
+    color: #fff;
+    text-decoration: none;
+    /*Pour une animation*/
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+/*Ce qui ce passe quand je met la souri sur cette element*/
+.remenber-forgot a:hover, .registre-link a{
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+/*Ce qui ce passe quand je met la souri sur cette element*/
+.login-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.registre-link{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 14px;
+
+}
