@@ -7,15 +7,23 @@
 }
 
 body{
-    background-color: red;
     display: flex;
     justify-content: center;    
     align-items: center;
     height: 100vh;
+    /*Mettre l'image*/
+    background: url(img.png);
+    /*Pour center l'image*/
+    background-position: center;
+    /*Pour bien aligne l'image*/
+    background-size: cover;
 }
 
 section{
-    background-color: green;
+    background-color: transparent;
+    border:2px solid rgb(255,255,255,0.2);
+    /*pour mettre un remplisage floutter*/
+    backdrop-filter: blur(20px);
     padding: 30px;
     width: 420px;
     border-radius: 20px;
